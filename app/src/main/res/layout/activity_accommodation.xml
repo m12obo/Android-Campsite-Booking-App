@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.uws.mik.b00278705campsiteapp.AccommodationActivity"
+    android:background="@drawable/blueskyalicdncom">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Our Accommodation "
+            android:id="@+id/textView5"
+            android:textColor="#0202ff"
+            android:layout_gravity="top|center_horizontal" />
+
+        <Spinner
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="186dp"
+            android:id="@+id/accomImage"
+            android:src="@drawable/allaccomm"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:layout_weight="0.14" />
+
+        <TextView
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/accomInfo"
+            android:layout_gravity="center"
+            android:layout_weight="0.68"
+            android:text="Please use the dropdown menu above  to view the different types of accomodation we have available."
+            android:textColor="#0202ff" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:text=" &lt; Go Back"
+                android:id="@+id/backButtonAcomm"
+                android:textColor="#0202ff" />
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:text="Make A Booking >"
+                android:id="@+id/makeBookingButton"
+                android:textColor="#0202ff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

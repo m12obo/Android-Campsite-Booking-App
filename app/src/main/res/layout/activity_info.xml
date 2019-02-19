@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.uws.mik.b00278705campsiteapp.InfoActivity"
+    android:background="@drawable/blueskyalicdncom"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Our Parks"
+            android:id="@+id/intoTitle"
+            android:textColor="#0202ff"
+            android:layout_gravity="top|center_horizontal" />
+
+        <Spinner
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerInfo"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="235dp"
+            android:layout_height="186dp"
+            android:id="@+id/parkImage"
+            android:src="@drawable/allparks"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="false"
+            android:layout_weight="0.17" />
+
+        <TextView
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:text="Please use the dropdown menu above  to view the different types of park locations we have available."
+            android:id="@+id/parkInfo"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.59"
+            android:textColor="#0202ff" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <TextSwitcher
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textSwitcher" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/locationButton"
+                android:src="@drawable/location_icon"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:text="Press to view the location of the park on google maps."
+                android:id="@+id/textView23"
+                android:textColor="#0202ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:id="@+id/textView12"
+                android:layout_weight="0.42" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.11">
+
+            <Button
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:text="&lt; Go Back"
+                android:id="@+id/goBackButton"
+                android:textColor="#0202ff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="View Our  Accommodation >"
+                android:id="@+id/accommButton"
+                android:textColor="#0202ff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

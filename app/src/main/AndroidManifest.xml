@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="uk.co.uglyskullsoftware.myapplication">
+    package="com.uws.mik.b00278705campsiteapp">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/launch_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -15,6 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".InfoActivity" />
+        <activity android:name=".AccommodationActivity" />
+        <activity android:name=".MakeBookingActivity" />
+        <activity android:name=".ConfirmationActivity" />
+        <activity android:name=".PayActivity" />
+        <activity android:name=".ReceiptActivity" />
+
     </application>
 
 </manifest>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.uws.mik.b00278705campsiteapp.ConfirmationActivity"
+    android:weightSum="1"
+    android:background="@drawable/blueskyalicdncom">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="559dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="189dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="229dp"
+                android:layout_height="27dp"
+                android:text="Booking Confirmation"
+                android:id="@+id/textView11"
+                android:layout_gravity="center"
+                android:textColor="#0202ff"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:weightSum="1">
+
+            <CheckBox
+                android:layout_width="272dp"
+                android:layout_height="53dp"
+                android:text="Would disabled access be required"
+                android:id="@+id/disAccessCheckBox"
+                android:checked="false"
+                android:textColor="#0202ff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.58"
+            android:weightSum="1"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Booking :"
+                android:id="@+id/textView6"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#0202ff"
+                android:textSize="18dp"
+                android:layout_weight="0.13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Park Name"
+                android:id="@+id/parkSelectedText"
+                android:layout_gravity="center"
+                android:textColor="#0202ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accommodation"
+                android:id="@+id/accomSelectedText"
+                android:layout_gravity="center"
+                android:textColor="#0202ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sleeping Capacity"
+                android:id="@+id/capacityText"
+                android:layout_gravity="center"
+                android:textColor="#0202ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date from"
+                android:id="@+id/dateFromText"
+                android:layout_gravity="center"
+                android:textColor="#0202ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date to"
+                android:id="@+id/dateToText"
+                android:layout_gravity="center"
+                android:textColor="#0202ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pets "
+                android:id="@+id/petView"
+                android:layout_gravity="center"
+                android:textColor="#0202ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="under16s"
+                android:id="@+id/under16Text"
+                android:layout_gravity="center"
+                android:textColor="#0202ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Under 5s"
+                android:id="@+id/under5Text"
+                android:layout_gravity="center"
+                android:textColor="#0202ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disabled Access is Not Required"
+                android:id="@+id/disabledAccessText"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.44"
+                android:textColor="#0202ff" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1"
+                android:layout_weight="0.36">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="       Total Cost £"
+                    android:id="@+id/textView13"
+                    android:layout_weight="0.09"
+                    android:textColor="#0202ff" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.26" />
+
+                <TextView
+                    android:layout_width="143dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="COST"
+                    android:id="@+id/totalCostText"
+                    android:textColor="#0202ff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1"
+                android:layout_weight="0.01">
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:text="&lt; Go Back"
+                    android:id="@+id/backButtonConfrim"
+                    android:textColor="#0202ff" />
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="Confirm  &amp; Pay >"
+                    android:id="@+id/confirmButton"
+                    android:textColor="#0202ff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
